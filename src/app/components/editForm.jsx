@@ -394,12 +394,12 @@ const EditForm = () => {
                             </div>
                             <div className="p-4 border rounded-lg shadow-md">
                                 <label className="block font-medium">Título 2 About Us:</label>
-                                <input type="text" name="about_us.titulo" placeholder={webData.members.titulo}
+                                <input type="text" name="members.titulo" placeholder={webData.members.titulo}
                                        onChange={handleChange} className="border p-2 w-full rounded"/>
                             </div>
                             <div className="p-4 border rounded-lg shadow-md">
                                 <label className="block font-medium">Texto 2 About Us:</label>
-                                <textarea name="about_us.texto" placeholder={webData.members.texto}
+                                <textarea name="members.texto" placeholder={webData.members.texto}
                                           onChange={handleChange} className="border p-2 w-full rounded"/>
                             </div>
                             <div className="p-4 border rounded-lg shadow-md">
