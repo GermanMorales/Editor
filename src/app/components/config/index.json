@@ -1,0 +1,151 @@
+{
+    "company": {
+      "name": "Nuestra Panadería",
+      "logo": "/assets/images/logo.png"
+    },
+    "navigation": [
+      {
+        "name": "Sobre Nosotros",
+        "href": "product"
+      },
+      {
+        "name": "Catálogo",
+        "href": "Catalogue"
+      },
+      {
+        "name": "Contáctanos",
+        "href": "features"
+      }
+    ],
+    "callToAction": {
+      "text": "Get started",
+      "href": "#"
+    },
+    "mainHero": {
+      "title": "Bienestar y Salud",
+      "subtitle": "Rosa Maria.",
+      "description": "",
+      "img": "/assets/images/1.png",
+      "primaryAction": {
+        "text": "Get started",
+        "href": "#"
+      },
+      "secondaryAction": {
+        "text": "Email us",
+        "href": "mailto:issaafakattan@gmail.com?subject=I like react landing page!"
+      }
+    },
+    "product": {
+      "title": "Sobre Nosotros",
+      "items": [
+        {
+          "title": "Productos",
+          "description": "En Bienestar y Salud Rosa Maria, nos dedicamos a brindar servicios de belleza y salud que promuevan un estilo de vida equilibrado y saludable.",
+          "img": "/assets/images/2.png"
+        },
+        {
+          "title": "Servicio",
+          "description": "Creemos en la importancia de cuidarse tanto por dentro como por fuera, y ofrecemos una variedad de tratamientos y productos para ayudarte a sentirte y verte mejor cada día. Nuestro equipo de profesionales está comprometido en proporcionarte una experiencia relajante y rejuvenecedora en cada visita.",
+          "img": "/assets/images/logo.png"
+        }
+      ]
+    },
+    "features": {
+      "title": "¡Contáctanos! ",
+      "subtitle": "¡Estamos aquí para ayudarte!",
+      "description": "Si necesitas más información o quieres contratar alguno de nuestros servicios, no dudes en contactarnos. Estamos disponibles para resolver tus dudas y brindarte la mejor atención.",
+      "items": [
+        {
+          "name": "Número",
+          "description": "+57 320 3415156",
+          "icon": "/assets/images/phone.png"
+        },
+        {
+          "name": "Email",
+          "description": "rosamariatalero@hotmail.com",
+          "icon": "/assets/images/email.png"
+        },
+        {
+          "name": "Instagram",
+          "description": "@rosamariatalerof",
+          "icon": "/assets/images/insta.png",
+          "url":"https://www.instagram.com/rosamariatalerof/?igsh=YnkzeG5xcHNkcnR4"
+        },
+        {
+          "name": "Facebook",
+          "description": "Rosa María Talero Franco",
+          "icon": "/assets/images/facebook.jpg",
+          "url":"https://www.facebook.com/people/Rosa-Mar%C3%ADa-Talero-Franco/61565789676850/?_rdc=1&_rdr"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Pricing",
+      "items": [
+        {
+          "name": "Free",
+          "price": "$0",
+          "priceDetails": "for one user",
+          "features": [
+            "1 user",
+            "Basic Support",
+            "1 GB of storage",
+            "Email support"
+          ]
+        },
+        {
+          "name": "Pro",
+          "price": "$15",
+          "priceDetails": "per user",
+  
+          "features": [
+            "5 users",
+            "Priority Support",
+            "10 GB of storage",
+            "Phone and Email support"
+          ]
+        },
+        {
+          "name": "Enterprise",
+          "price": "$29",
+          "priceDetails": "per user",
+          "features": [
+            "50 users",
+            "24/7 Support",
+            "100 GB of storage",
+            "Phone and Email support"
+          ]
+        }
+      ]
+    },
+    "about": {
+      "sections": [
+        {
+          "name": "Something",
+          "href": "#",
+          "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        },
+        {
+          "name": "Something",
+          "href": "#",
+          "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        },
+        {
+          "name": "Something",
+          "href": "#",
+          "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        },
+        {
+          "name": "Something",
+          "href": "#",
+          "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+        }
+      ],
+      "socialMedia": {
+        "github": "https://github.com/",
+        "twitter": "https://twitter.com/",
+        "linkedin": "https://www.linkedin.com/in/"
+      }
+    }
+  }
+  
