@@ -14,7 +14,7 @@ model personal_data {
   name      String
   business  String
   id_number String   @unique
-
+  password  String
   webs      webs[]
 }
 
