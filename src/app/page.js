@@ -16,23 +16,7 @@ import About from "./components/about";
 import ContactUs from "./components/contactUs";
 import TheFooter from "./components/footer";
 
-const mockWebData = {
-  header: {
-    logo: "/images/test-logo.png",
-  },
-  home: {
-    title: "Bienvenido a Nuestra Web",
-    description: "Esta es una descripción de prueba.",
-  },
-  about_us: {
-    title: "Sobre Nosotros",
-    content: "Información de prueba sobre la empresa.",
-  },
-  contact_us: {
-    email: "contacto@ejemplo.com",
-    phone: "+52 123 456 7890",
-  },
-};
+
 
 const WebsPage = () => {
   const [websData, setWebsData] = useState(null);
@@ -54,7 +38,7 @@ const WebsPage = () => {
         document.documentElement.style.setProperty("--hoverColor", data?.color3);
       } catch (error) {
         console.error("Error fetching data:", error);
-        setWebsData(mockWebData); // Fallback to mock data
+        //setWebsData(mockWebData); // Fallback to mock data
       } finally {
         setLoading(false);
       }
@@ -71,13 +55,13 @@ const WebsPage = () => {
 
   const structuredData = {
     ...websData,
-    home: websData?.home?.[0] || mockWebData.home,
-    about_us: websData?.about_us?.[0] || mockWebData.about_us,
+    home: websData?.home?.[0] || {},
+    about_us: websData?.about_us?.[0] || {},
     footer: websData?.footer?.[0] || {},
-    header: websData?.header?.[0] || mockWebData.header,
+    header: websData?.header?.[0] || {},
     catalogo: websData?.catalogo?.[0] || {},
     members: websData?.members?.[0] || {},
-    contact_us: websData?.contact_us?.[0] || mockWebData.contact_us,
+    contact_us: websData?.contact_us?.[0] || {},
     webs: websData?.webs || {},
   };
 
