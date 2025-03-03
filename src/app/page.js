@@ -55,7 +55,7 @@ const WebsPage = () => {
 
   if (saving) return <LoadingIndicator message=" Guardando datos..." />;
   if (loading) return  <LoadingIndicator message=" Cargando datos..." />;
-  if (!webData) return <ErrorIndicator message="Error al cargar datos" />;
+  
 
   const structuredData = {
     ...websData,
