@@ -21,6 +21,7 @@ import ErrorIndicator from "./components/errorView";
 
 
 const WebsPage = () => {
+  const [webData, setWebData] = useState(null);
   const [websData, setWebsData] = useState(null);
   const [loading, setLoading] = useState(true);
   const id = Number(process.env.NEXT_PUBLIC_WEB_ID);
