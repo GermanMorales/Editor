@@ -15,6 +15,8 @@ import HomeContent from "./components/homeContent";
 import About from "./components/about";
 import ContactUs from "./components/contactUs";
 import TheFooter from "./components/footer";
+import LoadingIndicator from "./components/infoView";
+import ErrorIndicator from "./components/errorView";
 
 
 
