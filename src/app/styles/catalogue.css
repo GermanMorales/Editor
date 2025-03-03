@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* General Styles */
 .catalogue-main-div {
     display: flex;
     justify-content: center;
@@ -6,7 +6,6 @@
     min-height: 100vh;
     padding: 50px;
     padding-top: 3%;
-    
 }
 
 .catalogue-container {
@@ -15,32 +14,36 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    max-width: 800px;
     padding: 20px;
     padding-top: 0;
     border-radius: 8px;
 }
 
-/* Estilos para el título */
+/* Title Styles */
 .catalogue-title {
     font-size: 3em;
     color: #000000;
     padding-top: 0;
 }
 
-/* Estilos para la imagen */
+/* Image Styles */
 .catalogue-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .catalogue-main-image {
+    max-width: 600px; /* Prevents it from being too large */
     width: 100%;
+    height: auto; /* Maintains aspect ratio */
     border-radius: 8px;
 }
 
-
-@media (max-width: 770px)  {
+/* Responsive Design */
+@media (max-width: 770px) {
     .catalogue-main-div {
         padding: 10px !important;
     }
@@ -52,18 +55,17 @@
     .catalogue-title {
         font-size: 2em !important;
     }
+
+    .catalogue-main-image {
+        max-width: 100%;
+    }
 }
 
-
-
-
-
-/* Animación para el contenedor de imagen */
+/* Animations */
 .catalogue-title.visible {
     animation-name: slideInFromLeft;
 }
 
-/* Animación para el contenedor de texto */
 .catalogue-main-image.visible {
     animation-name: slideInFromRight;
 }
