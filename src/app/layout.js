@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import prisma from "@/lib/prisma"; // Adjust the path if needed
+import prisma from "../../../../lib/prisma"; // Adjust the path if needed
 import "./globals.css";
 
 const geistSans = Geist({
