@@ -24,7 +24,7 @@ const WebsPage = () => {
   const id = Number(process.env.NEXT_PUBLIC_WEB_ID);
   const [formData, setFormData] = useState(null);
   const [saving, setSaving] = useState(false);
-  const listaRef = useRef([]);
+  //const listaRef = useRef([]);
 
   useEffect(() => {
     const fetchWebsData = async () => {
