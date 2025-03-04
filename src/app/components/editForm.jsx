@@ -11,6 +11,8 @@ import Members from "@/app/components/members";
 import TheFooter from "@/app/components/footer";*/
 //import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
 
+import LoadingIndicator from "../components/infoView";
+import ErrorIndicator from "../components/errorView";
 import Canvas from "../components/Canvas";
 import Features from "../components/Features";
 import Header from "../components/header1";
@@ -33,6 +35,7 @@ const EditForm = () => {
     const [webData, setWebData] = useState(null);
     const [formData, setFormData] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [saving, setSaving] = useState(false);
     const listaRef = useRef([]);
     const [editWidth, setEditWidth] = useState(400); // Initial width
 
@@ -274,11 +277,13 @@ const EditForm = () => {
 
     
 
-
-    if (loading) return <div>🔄 Cargando datos...</div>;
-    if (!webData) return <div>❌ No se encontraron datos.</div>;
-    if (!webData.catalogo) return <div>❌ Faltan datos en 'catalogo'.</div>;
-    if (!webData.webs) return <div>❌ Faltan datos en 'webs'.</div>;
+    if (saving) return <LoadingIndicator message=" Guardando datos..." />;
+    if (loading) return  <LoadingIndicator message=" Cargando datos..." />;
+    if (!webData) return <ErrorIndicator message="Error al cargar datos" />;
+    //if (loading) return <div>🔄 Cargando datos...</div>;
+    //if (!webData) return <div>❌ No se encontraron datos.</div>;
+    //if (!webData.catalogo) return <div>❌ Faltan datos en 'catalogo'.</div>;
+    //if (!webData.webs) return <div>❌ Faltan datos en 'webs'.</div>;
 
     return (
         <div className="flex gap-4 p-4 h-screen ">
