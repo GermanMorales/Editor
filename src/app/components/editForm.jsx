@@ -240,6 +240,7 @@ const EditForm = () => {
     };
     const handleSave = async (e) => {
         try {
+            setSaving(true);
             // Validar que formData no esté vacío
             if (!formData || Object.keys(formData).length === 0) {
                 alert("No hay datos para guardar.");
@@ -263,6 +264,7 @@ const EditForm = () => {
             } else {
                 alert("Error al guardar: " + ("Respuesta inesperada"));
             }
+            setSaving(false);
             window.location.href = '/';
 
         } catch (error) {
@@ -276,7 +278,8 @@ const EditForm = () => {
     };
 
     
-
+    console.log(saving);
+    console.log("se esta guardando supuestamente");
     if (saving) return <LoadingIndicator message=" Guardando datos..." />;
     if (loading) return  <LoadingIndicator message=" Cargando datos..." />;
     if (!webData) return <ErrorIndicator message="Error al cargar datos" />;
